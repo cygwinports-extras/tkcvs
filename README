@@ -1,0 +1,178 @@
+tkcvs
+------------------------------------------
+TkCVS is a Tcl/Tk-based graphical interface to the CVS configuration
+management system. It displays the status of the files in the current
+working directory, and provides buttons and menus to execute CVS
+commands on the selected files. TkDiff is included for browsing and
+merging your changes.
+
+Runtime requirements:
+  cvs
+  diffutils
+  subversion
+  tcl-8.4.12-1
+  tk-8.4.12-1
+
+Canonical website:
+  http://www.twobarleycorns.net/tkcvs.html
+  http://sourceforge.net/projects/tkcvs/
+
+Canonical download:
+  http://downloads.sourceforge.net/tkcvs/
+
+-------------------------------------------
+
+Build instructions:
+  unpack tkcvs-8.0.4-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./tkcvs-8.0.4-X.cygport all
+
+This will create:
+  /usr/src/tkcvs-8.0.4-X-src.tar.bz2
+  /usr/src/tkcvs-8.0.4-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/tkcvs
+  /usr/bin/tkdiff
+  /usr/lib/tkcvs/annotate.tcl
+  /usr/lib/tkcvs/bitmaps/add.gif
+  /usr/lib/tkcvs/bitmaps/adir.gif
+  /usr/lib/tkcvs/bitmaps/amod.gif
+  /usr/lib/tkcvs/bitmaps/anglerfish_med.gif
+  /usr/lib/tkcvs/bitmaps/annotate.gif
+  /usr/lib/tkcvs/bitmaps/annotate.xbm
+  /usr/lib/tkcvs/bitmaps/arrow_dn.gif
+  /usr/lib/tkcvs/bitmaps/arrow_hl_dn.gif
+  /usr/lib/tkcvs/bitmaps/arrow_hl_up.gif
+  /usr/lib/tkcvs/bitmaps/arrow_up.gif
+  /usr/lib/tkcvs/bitmaps/branch.gif
+  /usr/lib/tkcvs/bitmaps/branch.xbm
+  /usr/lib/tkcvs/bitmaps/branchtag.gif
+  /usr/lib/tkcvs/bitmaps/check.gif
+  /usr/lib/tkcvs/bitmaps/checkin.gif
+  /usr/lib/tkcvs/bitmaps/checkout.gif
+  /usr/lib/tkcvs/bitmaps/checkout_opts.gif
+  /usr/lib/tkcvs/bitmaps/conflict.gif
+  /usr/lib/tkcvs/bitmaps/cvs-says.xbm
+  /usr/lib/tkcvs/bitmaps/cvsdir.gif
+  /usr/lib/tkcvs/bitmaps/delete.gif
+  /usr/lib/tkcvs/bitmaps/delete_red.gif
+  /usr/lib/tkcvs/bitmaps/diff.gif
+  /usr/lib/tkcvs/bitmaps/dir.gif
+  /usr/lib/tkcvs/bitmaps/dirbranch.gif
+  /usr/lib/tkcvs/bitmaps/dirbranch.xbm
+  /usr/lib/tkcvs/bitmaps/dir_minus.gif
+  /usr/lib/tkcvs/bitmaps/dir_ok.gif
+  /usr/lib/tkcvs/bitmaps/dir_plus.gif
+  /usr/lib/tkcvs/bitmaps/dir_ques.gif
+  /usr/lib/tkcvs/bitmaps/edit.gif
+  /usr/lib/tkcvs/bitmaps/export.gif
+  /usr/lib/tkcvs/bitmaps/fileedit.gif
+  /usr/lib/tkcvs/bitmaps/files.gif
+  /usr/lib/tkcvs/bitmaps/fileview.gif
+  /usr/lib/tkcvs/bitmaps/folder.gif
+  /usr/lib/tkcvs/bitmaps/folderopen.gif
+  /usr/lib/tkcvs/bitmaps/import.gif
+  /usr/lib/tkcvs/bitmaps/locked.gif
+  /usr/lib/tkcvs/bitmaps/log.gif
+  /usr/lib/tkcvs/bitmaps/loop-ball.gif
+  /usr/lib/tkcvs/bitmaps/loop-glasses.gif
+  /usr/lib/tkcvs/bitmaps/man.gif
+  /usr/lib/tkcvs/bitmaps/mdir.gif
+  /usr/lib/tkcvs/bitmaps/mod.gif
+  /usr/lib/tkcvs/bitmaps/modbrowse.gif
+  /usr/lib/tkcvs/bitmaps/modbrowse_cvs.gif
+  /usr/lib/tkcvs/bitmaps/modbrowse_svn.gif
+  /usr/lib/tkcvs/bitmaps/newmerge.gif
+  /usr/lib/tkcvs/bitmaps/newmerge_simple.gif
+  /usr/lib/tkcvs/bitmaps/paper.gif
+  /usr/lib/tkcvs/bitmaps/patchfile.gif
+  /usr/lib/tkcvs/bitmaps/rcsdir.gif
+  /usr/lib/tkcvs/bitmaps/rdiff.gif
+  /usr/lib/tkcvs/bitmaps/remove.gif
+  /usr/lib/tkcvs/bitmaps/stat_conf.gif
+  /usr/lib/tkcvs/bitmaps/stat_ex.gif
+  /usr/lib/tkcvs/bitmaps/stat_kb.gif
+  /usr/lib/tkcvs/bitmaps/stat_merge.gif
+  /usr/lib/tkcvs/bitmaps/stat_minus.gif
+  /usr/lib/tkcvs/bitmaps/stat_mod.gif
+  /usr/lib/tkcvs/bitmaps/stat_ok.gif
+  /usr/lib/tkcvs/bitmaps/stat_ood.gif
+  /usr/lib/tkcvs/bitmaps/stat_plus.gif
+  /usr/lib/tkcvs/bitmaps/stat_plus_kb.gif
+  /usr/lib/tkcvs/bitmaps/stat_ques.gif
+  /usr/lib/tkcvs/bitmaps/svndir.gif
+  /usr/lib/tkcvs/bitmaps/tag.gif
+  /usr/lib/tkcvs/bitmaps/tags.gif
+  /usr/lib/tkcvs/bitmaps/ticklefish_med.gif
+  /usr/lib/tkcvs/bitmaps/tkcvs-help.xbm
+  /usr/lib/tkcvs/bitmaps/tkcvs48.xbm
+  /usr/lib/tkcvs/bitmaps/trace.xbm
+  /usr/lib/tkcvs/bitmaps/unedit.gif
+  /usr/lib/tkcvs/bitmaps/unlocked.gif
+  /usr/lib/tkcvs/bitmaps/updir.gif
+  /usr/lib/tkcvs/bitmaps/who.gif
+  /usr/lib/tkcvs/branch_diagram.tcl
+  /usr/lib/tkcvs/cde_params.tcl
+  /usr/lib/tkcvs/cvs.tcl
+  /usr/lib/tkcvs/dialog.tcl
+  /usr/lib/tkcvs/diff.tcl
+  /usr/lib/tkcvs/dircanvas.tcl
+  /usr/lib/tkcvs/errors.tcl
+  /usr/lib/tkcvs/exec.tcl
+  /usr/lib/tkcvs/filebrowse.tcl
+  /usr/lib/tkcvs/gen_log.tcl
+  /usr/lib/tkcvs/help.tcl
+  /usr/lib/tkcvs/import.tcl
+  /usr/lib/tkcvs/import2.tcl
+  /usr/lib/tkcvs/joincanvas.tcl
+  /usr/lib/tkcvs/logcanvas.tcl
+  /usr/lib/tkcvs/modbrowse.tcl
+  /usr/lib/tkcvs/modtree.tcl
+  /usr/lib/tkcvs/modules.tcl
+  /usr/lib/tkcvs/picklist.tcl
+  /usr/lib/tkcvs/rcs.tcl
+  /usr/lib/tkcvs/scrollbindings.tcl
+  /usr/lib/tkcvs/static.tcl
+  /usr/lib/tkcvs/svn-import.tcl
+  /usr/lib/tkcvs/svn.tcl
+  /usr/lib/tkcvs/tclIndex
+  /usr/lib/tkcvs/tkcvs_def.tcl
+  /usr/lib/tkcvs/tooltips.tcl
+  /usr/lib/tkcvs/vendor_merge.tcl
+  /usr/lib/tkcvs/workdir.tcl
+  /usr/share/doc/Cygwin/tkcvs-8.0.4.README
+  /usr/share/doc/tkcvs-8.0.4/ChangeLog
+  /usr/share/doc/tkcvs-8.0.4/COPYING
+  /usr/share/doc/tkcvs-8.0.4/FAQ
+  /usr/share/doc/tkcvs-8.0.4/INSTALL
+  /usr/share/man/man1/tkcvs.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 8.0.4-1 -----
+Version bump.
+
+----- version 8.0.3-1 -----
+Version bump.
+Source package is now cygport driven.
+
+----- version 8.0.2-1 -----
+Version bump.
+
+----- version 8.0.1-1 -----
+New major version with subversion support.
+
+----- version 7.2.4-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
