@@ -1,5 +1,5 @@
 category: Devel
-requires: cvs diff subversion tcl84 tk84
+requires: cvs diffutils subversion tcl tk
 sdesc: "Tk-based GUI to CVS, Subversion and diff"
 ldesc: "TkCVS is a Tcl/Tk-based graphical interface to the CVS configuration
 management system. It displays the status of the files in the current
