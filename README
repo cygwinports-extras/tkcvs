@@ -10,8 +10,8 @@ Runtime requirements:
   cvs
   diffutils
   subversion
-  tcl-8.4.12-1
-  tk-8.4.12-1
+  tcl-8.4.16-1
+  tk-8.4.16-1
 
 Canonical website:
   http://www.twobarleycorns.net/tkcvs.html
@@ -23,15 +23,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack tkcvs-8.0.4-X-src.tar.bz2
+  unpack tkcvs-8.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./tkcvs-8.0.4-X.cygport all
+  cygport ./tkcvs-8.1-X.cygport all
 
 This will create:
-  /usr/src/tkcvs-8.0.4-X-src.tar.bz2
-  /usr/src/tkcvs-8.0.4-X.tar.bz2
+  /usr/src/tkcvs-8.1-X-src.tar.bz2
+  /usr/src/tkcvs-8.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -64,12 +64,13 @@ Files included in the binary package:
   /usr/lib/tkcvs/bitmaps/delete_red.gif
   /usr/lib/tkcvs/bitmaps/diff.gif
   /usr/lib/tkcvs/bitmaps/dir.gif
-  /usr/lib/tkcvs/bitmaps/dirbranch.gif
-  /usr/lib/tkcvs/bitmaps/dirbranch.xbm
   /usr/lib/tkcvs/bitmaps/dir_minus.gif
+  /usr/lib/tkcvs/bitmaps/dir_new.gif
   /usr/lib/tkcvs/bitmaps/dir_ok.gif
   /usr/lib/tkcvs/bitmaps/dir_plus.gif
   /usr/lib/tkcvs/bitmaps/dir_ques.gif
+  /usr/lib/tkcvs/bitmaps/dirbranch.gif
+  /usr/lib/tkcvs/bitmaps/dirbranch.xbm
   /usr/lib/tkcvs/bitmaps/edit.gif
   /usr/lib/tkcvs/bitmaps/export.gif
   /usr/lib/tkcvs/bitmaps/fileedit.gif
@@ -131,31 +132,32 @@ Files included in the binary package:
   /usr/lib/tkcvs/import.tcl
   /usr/lib/tkcvs/import2.tcl
   /usr/lib/tkcvs/joincanvas.tcl
-  /usr/lib/tkcvs/logcanvas.tcl
   /usr/lib/tkcvs/modbrowse.tcl
   /usr/lib/tkcvs/modtree.tcl
   /usr/lib/tkcvs/modules.tcl
   /usr/lib/tkcvs/picklist.tcl
   /usr/lib/tkcvs/rcs.tcl
-  /usr/lib/tkcvs/scrollbindings.tcl
-  /usr/lib/tkcvs/static.tcl
   /usr/lib/tkcvs/svn-import.tcl
   /usr/lib/tkcvs/svn.tcl
   /usr/lib/tkcvs/tclIndex
   /usr/lib/tkcvs/tkcvs_def.tcl
   /usr/lib/tkcvs/tooltips.tcl
+  /usr/lib/tkcvs/ui_misc.tcl
   /usr/lib/tkcvs/vendor_merge.tcl
   /usr/lib/tkcvs/workdir.tcl
-  /usr/share/doc/Cygwin/tkcvs-8.0.4.README
-  /usr/share/doc/tkcvs-8.0.4/ChangeLog
-  /usr/share/doc/tkcvs-8.0.4/COPYING
-  /usr/share/doc/tkcvs-8.0.4/FAQ
-  /usr/share/doc/tkcvs-8.0.4/INSTALL
+  /usr/share/doc/Cygwin/tkcvs-8.1.README
+  /usr/share/doc/tkcvs-8.1/COPYING
+  /usr/share/doc/tkcvs-8.1/ChangeLog
+  /usr/share/doc/tkcvs-8.1/FAQ
+  /usr/share/doc/tkcvs-8.1/INSTALL
   /usr/share/man/man1/tkcvs.1.gz
 
 ------------------
 
 Port Notes:
+
+----- version 8.1-1 -----
+Version bump.
 
 ----- version 8.0.4-1 -----
 Version bump.
